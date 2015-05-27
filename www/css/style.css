@@ -1,0 +1,74 @@
+/* Empty. Add your own CSS if you like */
+.pac-item{
+  line-height: 40px;
+}
+.pac-icon{
+  margin-top: 12px;
+}
+.temperature{
+  position: relative;
+}
+ion-view{
+  background: url(http://media.idownloadblog.com/wp-content/uploads/2013/09/121@2xiphone.png);
+}
+ion-item{
+  background-color: #fff;
+}
+.item,.list-inset, .pane, .view{
+  color:#fff;
+  background-color: transparent;
+}
+.ion-google-place-container .item{
+  background-color: #fff;
+  color:#444;
+}
+.bar.bar-stable{
+    background-color: rgba(248, 248, 248, 0.23);
+    border-color: rgba(178, 178, 178, 0.34);
+}
+.bar.bar-stable .title{
+  color: #fff;
+}
+.weather-content{
+  margin-top: 30px;
+}
+.temperature{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 58px;
+}
+.menu .bar-header h1.title,.item-toggle span{
+  color: #444;
+}
+.bar-stable .button.button-clear{
+  color:#f5f5f5;
+}
+.details{
+  margin-top: 35px;
+}
+.location{
+  margin-top:50px;
+  text-align: center;
+}
+h1, .h1, h2, .h2, h3, .h3{
+  color:#fff;
+}
+.item{
+  border:none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+  font-size: 18px;
+}
+.temperature .deg{
+  font-size: 21px;
+  top: 0px;
+  position: absolute;
+}
+input.ion-google-place[readonly]{
+  width:100%;
+  color:#fff;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.4);
+}
+input.ion-google-place[readonly]::-webkit-input-placeholder {color:rgba(255,255,255,0.9);}
+input.ion-google-place[readonly]::-moz-placeholder          {color:rgba(255,255,255,0.9);}/* Firefox 19+ */
+input.ion-google-place[readonly]:-moz-placeholder           {color:rgba(255,255,255,0.9);}/* Firefox 18- */
+input.ion-google-place[readonly]:-ms-input-placeholder      {color:rgba(255,255,255,0.9);}

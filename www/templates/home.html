@@ -1,0 +1,30 @@
+<ion-view>
+    <ion-pane>
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Ionic Weather</h1>
+        </ion-header-bar>
+        <ion-content>
+            <div class="list list-inset weather-content">
+                <div>
+                    <ion-google-place placeholder="Set Location" ng-model="vm.location" />
+                </div>
+                <h2 class="location" ng-bind-html="vm.locationName">
+                </h2>
+                <h3 class="temperature">
+                {{vm.temp}} <span ng-show="vm.temp" class="deg">o</span>
+                </h3>
+                <ul ng-show="vm.temp" class="list details">
+                    <li ng-show="settings.wind" class="item">
+                        Wind speed: {{vm.windSpeed}} m/s
+                    </li>
+                    <li ng-show="settings.huminity" class="item">
+                        Humidity: {{vm.humidity}} %
+                    </li>
+                    <li ng-show="settings.pressure" class="item">
+                        Pressure: {{vm.pressure}} hPa
+                    </li>
+                </ul>
+            </div>
+        </ion-content>
+    </ion-pane>
+</ion-view>
