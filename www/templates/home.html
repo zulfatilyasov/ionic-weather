@@ -11,7 +11,10 @@
                 <h2 class="location" ng-bind-html="vm.locationName">
                 </h2>
                 <h3 class="temperature">
-                {{vm.temp}} <span ng-show="vm.temp" class="deg">o</span>
+                {{vm.temp}} <div class="measure" ng-show="vm.temp" >
+                 <a href="javascript:void(0)" ng-class={active:vm.measure==='cel'} class="unit" ng-click="vm.setMeasure('cel')">C<span class="deg">o</span></a>
+                 <a class="delimiter">|</a>
+                 <a href="javascript:void(0)" ng-class={active:vm.measure==='fah'} class="unit" ng-click="vm.setMeasure('fah')">F<span class="deg">o</span></a></div>
                 </h3>
                 <ul ng-show="vm.temp" class="list details">
                     <li ng-show="settings.wind" class="item">

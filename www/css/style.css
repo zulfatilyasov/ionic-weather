@@ -53,15 +53,36 @@ ion-item{
 h1, .h1, h2, .h2, h3, .h3{
   color:#fff;
 }
+.unit{
+  padding-left: 4px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.53);
+}
+
+.unit.active{
+  color:#fff;
+}
+
+.delimiter{
+  padding-left: 10px;
+}
+.deg{
+  position: absolute;
+  top: -3px;
+  font-size: 13px;
+  display: inline-block;
+  padding-left: 3px;
+}
 .item{
   border:none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.23);
   font-size: 18px;
 }
-.temperature .deg{
+.temperature .measure{
   font-size: 21px;
-  top: 0px;
+  top: 12px;
   position: absolute;
+  display: inline-block;
 }
 input.ion-google-place[readonly]{
   width:100%;
